@@ -43,6 +43,6 @@ resource "google_compute_instance" "http_server" {
   tags = ["http-server"]
   
   labels = {
-    "environment": "${local.network}"
+    environment = "${local.network}"
   }
 }
